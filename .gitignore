@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PHP Storm IDE
+/.idea
+
+# Visual Code IDE
+/.vscode
