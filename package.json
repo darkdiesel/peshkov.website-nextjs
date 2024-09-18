@@ -6,24 +6,38 @@
     "dev": "dotenv -- next dev",
     "build": "next build",
     "start": "dotenv -- next start",
-    "lint": "next lint",
+    "lint": "eslint --fix \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\"",
+    "format": "prettier --write \"src/**/*.{js,mjs,cjs,ts,jsx,tsx}\"",
     "prepare": "husky"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "dotenv-cli": "^7.4.2",
-    "next": "14.2.4",
+    "next": "14.2.12",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.10.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
+    "eslint": "^9.10.0",
+    "eslint-config-next": "^14.2.12",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "husky": "^9.0.11",
-    "typescript": "^5"
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
+  },
+  "overrides": {
+    "eslint": "$eslint"
   }
 }
